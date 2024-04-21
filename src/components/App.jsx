@@ -20,12 +20,14 @@ const App = () => {
       setImages([]);
       fetchImages();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [searchTerm]);
 
   useEffect(() => {
     if (page > 1) {
       fetchImages();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [page]);
 
   const fetchImages = async () => {
